@@ -191,7 +191,7 @@ header.sticky
 }
 
 .about-img img{
-    max-width: 300px;
+   
     height: 10%;
     width: 100%;
     border-radius: 8px;
@@ -200,6 +200,7 @@ header.sticky
 .about-text h2 {
     font-size:2.2rem;
     line-height:1;
+    color: black;
 }
 
 .about-text h4{
@@ -211,11 +212,14 @@ header.sticky
     margin-bottom: 1rem;
 }
 .about-text p{
-    color: var(--second-color);
+    color: black;
     font-size: var(--p-font);
     line-height: 1.6;
     margin-bottom: 2rem;
 }
+
+
+
 
 .skills {
     background: var(--second-bg-color);
@@ -234,6 +238,7 @@ header.sticky
 .main-text h2{
     font-size: var(--h2-font);
     line-height: 1;
+    color: white;
 }
 
 .skills-content{
@@ -277,7 +282,7 @@ header.sticky
     margin-bottom: 15px;
 }
  
-.portfolio-content{
+/* .portfolio-content{
     padding-top:-10px;
 }
 .portfolio-content
@@ -373,7 +378,81 @@ header.sticky
 
  .row1:hover  .layer{
     height: 100%;
- }
+ } */
+
+
+ /* portfolio css */
+
+.portfolio {
+    padding: 50px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.main-text h2 {
+    text-align: center;
+    font-size: 2.5rem;
+   
+}
+
+.main-text h2 span {
+    color:var(--main-color);/* Accent color for the word "Projects" */
+}
+
+/* Portfolio Content */
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between rows */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Alternate Image and Content Positioning */
+.row:nth-child(odd) {
+    flex-direction: row; /* Default: Content on left, image on right */
+}
+
+.row:nth-child(even) {
+    flex-direction:row /* Reverse: Image on left, content on right */
+}
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color:var(--main-color);
+}
+
+.content h3 {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Image Styles */
+.image {
+    flex: 1;
+   
+    text-align: center;
+}
+
+.image img {
+    max-width: 70%;
+    height: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 
  .contact {
@@ -419,7 +498,7 @@ header.sticky
 .list li a {
     display: block;
     color:var(--second-color);
-    font-size: 12px;
+    font-size: 17px;
     transition: all .45s ease;
 }
 .list li a:hover{
@@ -439,7 +518,7 @@ header.sticky
 
 .last-text p{
     color: var(--second-color);
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .top i {
@@ -452,6 +531,10 @@ header.sticky
 
 .top i:hover{
     transform: scale(1.1);
+}
+section{
+    background: white;
+  
 }
 
 @media (max-width:1480px){
